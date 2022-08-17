@@ -30,7 +30,7 @@
             %></td>
             <td><%= optimization_to_compare.config["options"].to_s %></td>
             <td><%= nb_points(optimization_to_compare.inputs) %></td>
-            <td><%= if optimization_to_compare.outputs["y_best"].nil? then "None" else optimization_to_compare.outputs["y_best"][-1] end %></td>
+            <td><%= if optimization_to_compare.outputs["y_best"].nil? then "Not computed" else optimization_to_compare.outputs["y_best"][-1] end %></td>
         </tr>
         <% end %>
     </tbody>
